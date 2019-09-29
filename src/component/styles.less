@@ -1,0 +1,335 @@
+#app {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+#main-wrapper {
+  font-size: 10px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  padding: 110px 40px 0 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  height: 110px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  padding: 20px 40px;
+
+  .links {
+    font-family: 'handbook-pro-regular';
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 18px;
+    position: absolute;
+    bottom: 8px;
+
+    li {
+      float: left;
+      margin-right: 35px;
+      cursor: pointer;
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .top-bar {
+    position: absolute;
+    max-height: 20px;
+    top: 30px;
+  }
+
+  .images {
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+
+    img {
+      max-height: 65px;
+      margin-left: 30px;
+    }
+
+  }
+}
+
+section {
+  min-height: calc(100vh - 110px);
+  display: block;
+}
+
+#home_container {
+
+  .text-group {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 140px;
+    z-index: 2;
+
+    h1 {
+      position: relative;
+      font-family: 'handbook-pro-bold';
+      color: #000000;
+      font-size: 130px;
+      line-height: 110px;
+      height: 90px;
+      width: 550px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      &.sub-color {
+        color: #826C48;
+      }
+
+      span {
+        position: absolute;
+      }
+    }
+
+    .button-group {
+      margin-top: 30px;
+
+      button {
+        font-family: 'handbook-pro-regular';
+        background-color: #DF5435;
+        color: #fff;
+        border: 2px solid #DF5435;
+        padding: 14px 50px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        &.light {
+          background-color: #fff;
+          color: #DF5435;
+          border: 2px solid #DF5435;
+        }
+      }
+    }
+  }
+
+  .image-shapes-group {
+    position: absolute;
+    z-index: 1;
+    right: 102px;
+    top: 225px;
+    height: 460px;
+    width: 720px;
+
+    .woman {
+      overflow: hidden;
+      height: 460px;
+      width: 720px;
+
+      .image-wrapper {
+        height: 460px;
+        width: 720px;
+        background-image: url('../resource/images/woman-image.png');
+        background-size: cover;
+        background-position: 0 -20px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      .white-bar {
+        position: absolute;
+        background-color: #fff;
+      }
+    }
+
+    .shape1 {
+      position: absolute;
+      width: 315px;
+      top: -4px;
+      left: 402px;
+      overflow: hidden;
+      z-index: 3;
+
+      .white-bar {
+        width: 0;
+        position: absolute;
+        z-index: 3;
+        height: 20px;
+        background-color: #fff;
+      }
+
+      .wrapper {
+        width: 315px;
+
+        div:nth-child(1) {
+          height: 4px;
+          width: 315px;
+          background-color: #826C48;
+        }
+
+        div:nth-child(2) {
+          height: 15px;
+          width: 220px;
+          background-color: #826C48;
+          float: right;
+          top: -1px;
+          position: relative;
+        }
+      }
+    }
+
+    .image1 {
+      background-image: url('../resource/images/building-image.jpg');
+      background-size: cover;
+      height: 180px;
+      width: 120px;
+      position: absolute;
+      right: -40px;
+      bottom: 200px;
+
+      > div {
+        height: 50px;
+        width: 8px;
+        background-color: #826C48;
+        position: absolute;
+        right: -8px;
+        bottom: 160px;
+        z-index: 2;
+
+        > div {
+          height: 0;
+          width: 9px;
+          bottom: 0;
+          position: absolute;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .image2 {
+      background-image: url('../resource/images/group-image.jpg');
+      background-size: cover;
+      height: 155px;
+      width: 230px;
+      position: absolute;
+      left: 15px;
+      bottom: -80px;
+      z-index: 3;
+
+    }
+
+    .shape2 {
+      div {
+        position: absolute;
+        z-index: 3;
+        background-color: #D8D8D8;
+
+        &:nth-child(1) {
+          height: 10px;
+          width: 54px;
+          top: -30px;
+          left: -30px;
+        }
+
+        &:nth-child(2) {
+          height: 10px;
+          width: 8px;
+          top: -40px;
+          left: 50px;
+        }
+
+        &:nth-child(3) {
+          height: 14px;
+          width: 14px;
+          left: 300px;
+          bottom: -100px;
+          background-color: #DF5435;
+        }
+
+        &:nth-child(4) {
+          height: 14px;
+          width: 100px;
+          right: 14px;
+          background-color: #DF5435;
+        }
+
+      }
+    }
+
+    .shape3 {
+      div {
+        position: absolute;
+        z-index: 2;
+
+        &.white-bar {
+          background-color: #fff;
+          width: 0;
+        }
+
+        &.first {
+          height: 14px;
+          width: 0;
+          bottom: -65px;
+          left: -25px;
+          background-color: #DF5435;
+
+          .white-bar {
+            height: 14px;
+          }
+        }
+
+        &.second {
+          height: 22px;
+          width: 31px;
+          left: 540px;
+          bottom: -65px;
+          background-color: #D8D8D8;
+
+          .white-bar {
+            height: 22px;
+          }
+        }
+      }
+    }
+
+    .shape4 {
+      position: absolute;
+      width: 70px;
+      height: 14px;
+      left: 460px;
+      bottom: -25px;
+      overflow: hidden;
+
+      .white-bar {
+        background-color: #fff;
+        width: 0;
+        height: 14px;
+        position: absolute;
+      }
+
+      div:nth-child(1) {
+        position: absolute;
+        width: 31px;
+        height: 14px;
+        background-color: #826C48;
+      }
+
+      div:nth-child(2) {
+        position: absolute;
+        width: 70px;
+        height: 5px;
+        bottom: 0;
+        background-color: #826C48;
+      }
+    }
+  }
+}
+
+
+
