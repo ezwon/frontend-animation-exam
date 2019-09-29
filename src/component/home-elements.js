@@ -29,10 +29,10 @@ export function TextGroup() {
   return (
     <div className="text-group">
       <h1><TitleText delay={1700} initialPose={'hidden'} pose={'visible'}>DUBAI</TitleText></h1>
-      <h1><TitleText delay={1800} initialPose={'hidden'} pose={'visible'}>WOMEN</TitleText></h1>
-      <h1 className="sub-color"><TitleText delay={1900} initialPose={'hidden'} pose={'visible'}>ESTABLISH</TitleText>
+      <h1><TitleText delay={1750} initialPose={'hidden'} pose={'visible'}>WOMEN</TitleText></h1>
+      <h1 className="sub-color"><TitleText delay={1800} initialPose={'hidden'} pose={'visible'}>ESTABLISH</TitleText>
       </h1>
-      <h1 className="sub-color"><TitleText delay={2000} initialPose={'hidden'} pose={'visible'}>MENT</TitleText></h1>
+      <h1 className="sub-color"><TitleText delay={1850} initialPose={'hidden'} pose={'visible'}>MENT</TitleText></h1>
 
       <div className="button-group">
         <Button delay={2800} initialPose={'hidden'} pose={'visible'}>Initiatives</Button>
